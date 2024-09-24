@@ -53,14 +53,14 @@ footer {
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #dbedf3;
+  box-shadow: 2px 3px 2px 2px red;
   opacity: 0.5;
   transform: scale(0.95);
 }
 
 .red {
   color: red;
-  transition: background-color 0.5s ease;
+  transition: color 0.3s;
 }
 
 .rotate {

@@ -90,14 +90,14 @@ function buttonAnimation(currentkey) {
 
     setTimeout(function () {
       activeButton.classList.remove("pressed");
-    }, 500);
+    }, 1000);
 
     setTimeout(function () {
       activeButton.classList.remove("red");
-  }, 500);
+    }, 1000);
 
-  setTimeout(function () {
-    activeButton.classList.remove("rotate");
-  }, 500);
-}
+    setTimeout(function () {
+      activeButton.classList.remove("rotate");
+    }, 1000);
+  }
 }
