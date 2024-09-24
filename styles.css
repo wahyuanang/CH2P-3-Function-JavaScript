@@ -55,10 +55,25 @@ footer {
 .pressed {
   box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
+  transform: scale(0.95);
 }
 
 .red {
   color: red;
+  transition: background-color 0.5s ease;
+}
+
+.rotate {
+  animation: rotation 0.5s ease-in-out;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .drum {

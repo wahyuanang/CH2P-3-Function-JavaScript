@@ -21,7 +21,6 @@ for (let i = 0; i < totalButton; i++) {
     let buttonInnerHTML = this.innerHTML;
     playSound(buttonInnerHTML);
     buttonAnimation(buttonInnerHTML);
-    this.style.color = "yellow";
   });
 }
 
@@ -86,9 +85,19 @@ function buttonAnimation(currentkey) {
   let activeButton = document.querySelector("." + currentkey);
   if (activeButton) {
     activeButton.classList.add("pressed");
+    activeButton.classList.add("red");
+    activeButton.classList.add("rotate");
 
     setTimeout(function () {
       activeButton.classList.remove("pressed");
-    }, 100);
-  }
+    }, 500);
+
+    setTimeout(function () {
+      activeButton.classList.remove("red");
+  }, 500);
+
+  setTimeout(function () {
+    activeButton.classList.remove("rotate");
+  }, 500);
+}
 }
