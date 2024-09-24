@@ -60,7 +60,7 @@ footer {
 
 .red {
   color: red;
-  transition: color 0.3s;
+  transition: red 0.3s;
 }
 
 .rotate {
